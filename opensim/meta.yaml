@@ -10,7 +10,7 @@ package:
 source:
 #    path: /home/kidzik/workspace/opensim-core
     git_url: https://github.com/opensim-org/opensim-core.git
-    git_rev: 399c8d57a779dd5dde2916192f8b92bfc959e269 #beta
+    git_rev: b28f27adcd8df9b55cde08475cf1f814a1098573 #beta
   
 build:
     number: 12
@@ -33,6 +33,7 @@ requirements:
         - toolchain
         - cmake >=2.8.6
         - python
+        # - freeglut # 191210 Maybe needed? by KDM
         # - python                  # [win]
 
 about:
@@ -44,4 +45,4 @@ about:
 
 extra:
     recipe-maintainers:
-        - kidzik
+        - kim135797531
