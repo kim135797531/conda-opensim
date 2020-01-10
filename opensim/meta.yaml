@@ -1,6 +1,6 @@
 package:
-    name: opensim
-    version: "4.0.0"
+    name: opensim-nightly
+    version: "4.1.nightly20200110"
 
 #source:
 #    fn: OpenSim-40-source.zip
@@ -8,9 +8,9 @@ package:
 #    sha256: dd425e886f394098533142652e246b375c8fb4d69246f0ffffcdd63bbbdb39c3
 
 source:
-#    path: /home/kidzik/workspace/opensim-core
+#    path: /home/kdm/kdm-projects/infant2019/opensim-src/opensim-core
     git_url: https://github.com/opensim-org/opensim-core.git
-    git_rev: b28f27adcd8df9b55cde08475cf1f814a1098573 #beta
+    git_rev: 5f7df7741e38d5a8a6317f69d287aba5edcafaca
   
 build:
     number: 12
@@ -26,14 +26,13 @@ build:
 requirements:
   run:
         - python
-        - openblas
         - freeglut
   build:
         - swig
         - toolchain
         - cmake >=2.8.6
         - python
-        # - freeglut # 191210 Maybe needed? by KDM
+        - freeglut # 191210 Maybe needed? by KDM
         # - python                  # [win]
 
 about:
